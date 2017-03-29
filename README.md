@@ -9,6 +9,7 @@ Version 1 Steps:
    represents go to https://developer.riotgames.com/item-sets.html 
    Other than that, "blocks" is an array, and each element of the array represents a row in the shop interface.
 3. Save your file as any name you wish, and make sure you add ".json" (without the quotation marks) as the file extension.
+   I have provided a .txt file of the json file just in case the json file does not open. 
 4. Find the location of League of Legneds in your computer (Example: In my mac, it is Applications->League Of Legends). 
    Right click->Show Package Contents-> Config -> Champions -> (Pick your champ) -> Recommended
    For my computer, I had to do:  Show Package Contents -> Contents -> LoL before reaching Config. Either way, inside the Recommended folder
