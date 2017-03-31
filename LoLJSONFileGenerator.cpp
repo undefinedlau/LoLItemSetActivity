@@ -280,6 +280,7 @@ int main() {
     string SnumBlocks = "";
     int InumBlocks = 0;
     char titleOfItemSet[100];
+    int testing = 0;
 
     cout << endl; cout << endl; cout << endl; cout << endl;
     cout << "********************************" << endl;
@@ -290,8 +291,10 @@ int main() {
     cout << "Please enter a title of reasonable length for your item set: " << endl;
     cin.getline(titleOfItemSet,sizeof(titleOfItemSet));
     
-    cout << "Please enter a reasonable amount of blocks you want:" << endl;
+    
+    cout << "Please enter a reasonable amount of blocks you want (entering a non-integer will crash the program):" << endl;
     getline(cin,SnumBlocks);
+    
     
     InumBlocks = stoi(SnumBlocks);
     createArray(items);
