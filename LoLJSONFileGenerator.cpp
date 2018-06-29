@@ -1,16 +1,14 @@
-//
-//  main.cpp
-//  LoLJSONFileGenerator
-//
-//  Created by Brian Lau on 3/29/17.
-//  Copyright © 2017 Brian. All rights reserved.
-//
-
 #include <iostream>
 #include <fstream>
 #include <cstring>
 using namespace std;
 
+/* createArray() - populates the array with items from the game
+ *
+ * @items: an array of strings
+ *
+ * Return: an array of strings
+ */
 string* createArray(string items[]) {
 
     items[1001] = "Boots of Speed";
@@ -199,16 +197,33 @@ string* createArray(string items[]) {
     items[3903] = "Raise Morale";
     
     return items;
-} // store the items
+} 
 
+
+
+/* searchArrayOfItems - searches the items array for an item
+ *
+ * @itemYouWant - a string representing the item to search for
+ * @items - an array of items
+ *
+ * Return: the index (integer) at which item is found, else -1
+ */
 int searchArrayOfItems(string itemYouWant, string items[4000])
 {
     for (int i = 0; i < 4000; i++)
         if (itemYouWant.compare(items[i]) == 0)
-            return i; // returns the index at which the item is found
-    return -1; // if not found, return some random integer
+            return i; 
+    return -1; 
 }
 
+
+/* makeJSONFile - creates the JSON file
+ *
+ * @titleOfItemSet - a title of the user's choosing of the item set
+ * @InumBlocks - the number of item set blocks to create in the file 
+ * @items - an array of items
+ * 
+ */
 void makeJSONFile(string titleOfItemSet, int InumBlocks, string items[4000]) {
     
     ofstream file;
