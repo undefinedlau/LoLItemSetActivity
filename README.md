@@ -5,7 +5,7 @@ There are two versions of the project listed below. Note that this project is
 now obsolete due to Riot Games restoring the item sets feature.    
 
 
-# 3/28/2017 - Version 1 Steps:
+# 3/28/2017 - Version 1 Steps
 
 1. Go to *http://ddragon.leagueoflegends.com/tool/* and write down 
 the id(s) of the items you want (they are after the item names).      
